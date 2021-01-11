@@ -30,9 +30,11 @@ export default {
   },
   methods: {
     hourLocal() {
-      this.currentTime = this.moment().format("LTS");
-      this.currentTimeBaby = this.moment()
-        .add(1, "hours")
+      this.currentTime = this.momentTimeZone()
+        .tz("America/Mexico_City")
+        .format("LTS");
+      this.currentTimeBaby = this.momentTimeZone()
+        .tz("America/Kentucky/Monticello")
         .format("LTS");
     },
   },

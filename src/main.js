@@ -4,9 +4,9 @@ import router from "./router";
 import axios from "axios";
 import VueAxios from "vue-axios";
 import "./registerServiceWorker";
-import moment from "moment";
+import momentTimeZone from "moment-timezone";
 
-Vue.prototype.moment = moment;
+Vue.prototype.momentTimeZone = momentTimeZone;
 
 axios.defaults.baseURL = "http://localhost:3000/api/";
 
