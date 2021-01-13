@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-screen bg-purple-600 relative">
+  <div class="w-full h-screen bg-purple-600 sticky top-0">
     <div class="w-full text-center py-4">
       <div class="rounded-full w-24 h-24 bg-gray-50 mx-auto mb-2"></div>
       <h3 class="font-semibold text-gray-50 text-lg">Username</h3>

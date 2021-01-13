@@ -7,6 +7,8 @@ module.exports = {
   variants: {
     extend: {
       cursor: ["hover", "focus"],
+      backgroundColor: ["checked"],
+      borderColor: ["checked"],
     },
   },
   plugins: [],

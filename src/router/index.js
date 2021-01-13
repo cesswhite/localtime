@@ -12,30 +12,35 @@ const routes = [
   },
 
   {
-    path: "/notes",
-    name: "notes",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Notes.vue"),
-  },
-  {
     path: "/dashboard",
     name: "dashboard",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Dashboard.vue"),
+    component: () => import("../views/Dashboard.vue"),
     children: [
       {
         path: "/home",
         name: "home",
-        component: () =>
-          import(
-            /* webpackChunkName: "about" */ "../views/DashboardContainer.vue"
-          ),
+        component: () => import("../views/DashboardContainer.vue"),
       },
       {
-        path: "/task",
-        name: "Task",
-        component: () =>
-          import(/* webpackChunkName: "about" */ "../views/About.vue"),
+        path: "/notes",
+        name: "notes",
+        component: () => import("../views/Notes.vue"),
+      },
+      {
+        path: "/tasks",
+        name: "tasks",
+        component: () => import("../views/Tasks.vue"),
+        meta: {
+          title: "Tasks",
+        },
+      },
+      {
+        path: "/playground",
+        name: "playground",
+        component: () => import("../views/Playground.vue"),
+        meta: {
+          title: "Playground",
+        },
       },
     ],
   },

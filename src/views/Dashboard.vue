@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen w-screen flex">
+  <div class="flex">
     <div class="w-1/4">
       <Menu></Menu>
     </div>
-    <div class="w-3/4">
+    <div class="w-3/4 p-4">
       <router-view></router-view>
     </div>
   </div>
